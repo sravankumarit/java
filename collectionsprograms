@@ -1,0 +1,19 @@
+import java.util.*;
+public class Enumeration1
+{
+public static void main(String args[])
+{
+Vector vect1=new Vector();
+vect1.addElement("IT");
+vect1.addElement("Sowmya");
+vect1.addElement("Sowmya");
+vect1.addElement("Sowmya");
+vect1.addElement("Sowmya");
+Enumeration e=vect1.elements();
+while(e.hasMoreElements())
+{
+Object obj1=e.nextElement();
+System.out.println(obj1);
+}
+}
+}
