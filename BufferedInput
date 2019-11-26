@@ -1,0 +1,19 @@
+import java.io.*;
+class Inputt
+{
+public static void main(String[] args)throws IOException
+{
+FileInputStream fin=new FileInputStream("abc.txt");
+BufferedInputStream bin=new BufferedInputStream(fin);
+FileOutputStream fin1=new FileOutputStream("abcd.txt");
+BufferedOutputStream bin1=new BufferedOutputStream(fin1);
+int temp;
+while((temp=bin.read())!=-1)
+{
+bin1.write(temp);
+System.out.println((char)temp);
+}
+bin1.close();
+bin.close();
+}
+}
